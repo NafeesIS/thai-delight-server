@@ -6,6 +6,7 @@ const port = process.env.PORT || 5000;
 app.use(cors())
 const categories = require('./data/categories.json')
 console.log(categories);
+
 app.get('/', (req, res) => {
     res.send('Food Website is Running')
 });
