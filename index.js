@@ -8,6 +8,7 @@ console.log(categories);
 app.get('/', (req, res) => {
     res.send('Food Website is Running')
 });
+
 app.get('/categories', (req, res) => {
     res.send(categories);
     console.log(categories);
