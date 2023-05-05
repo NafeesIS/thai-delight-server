@@ -12,6 +12,7 @@ app.get('/categories', (req, res) => {
     res.send(categories);
     console.log(categories);
 })
+
 app.get('/categories/:id', (req, res) => {
     const id = req.params.id;
     const category = categories.find(category => category.id === id);
